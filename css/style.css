@@ -1,0 +1,244 @@
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+html,body,.container{
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+h1,h2{
+  margin:0;
+  height:50%;
+  padding:2% 0 0 3%;
+}
+
+body{
+  background: linear-gradient(#000000, #2B70C4); /* Standard syntax */
+
+}
+
+.container{
+	width:100%;
+  position:relative;
+  background-image:url("../images/bluewhale.png");
+  background-size:60%;
+  background-repeat:no-repeat;
+  background-position:50% -20%;
+  font-size:14px;
+}
+
+header{
+  position:relative;
+  width:100%;
+  height:15%;
+}
+
+.title{
+	font-family:blackout-midnight, sans-serif;
+	color:white;
+}
+
+.subtitle{
+	font-family:DistProThin, sans-serif;
+	color:white;
+}
+
+.leftmenu{
+	width:15%;
+  position:absolute;
+  height:85%;
+  bottom:0;
+}
+
+.leftmenu img{
+  width:70%;
+	position:relative;
+  padding:10% 0 0 8%;
+}
+
+.leftmenu img:first-child{
+  margin:10% 0 0 0;
+}
+
+.sound{
+	display:none;
+}
+
+h3{
+	font-family:blackout-midnight, sans-serif;
+}
+
+.information{
+	font-family:DistProThin, sans-serif;
+  font-size:1em;
+}
+
+.information section{
+  display:none;
+  padding:1% 2% 1% 2%;
+  position:absolute;
+  margin:5% 0 0 35%;
+  width:35%;
+  background-color:white;
+  opacity:.5;
+  border:solid 4px navy;
+}
+
+.plankton{
+  width:15%;
+  display:none;
+  position:absolute;
+  top:5%;
+  left:60%;
+  opacity:0;
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; transform:translateX(0)}
+  25%  { opacity:.5; transform:translateX(15%)}
+  50%  { opacity:1; transform:translateX(30%)}
+  75%  { opacity:.5; transform:translateX(15%)}
+  100% { opacity:1; transform:translateX(0)}
+}
+
+.animate-flicker {
+  opacity:1;
+  animation: flickerAnimation 10s infinite linear;
+}
+
+.breachbutton{
+  width:15%;
+  display:none;
+  margin:4% 0 0 68%;
+  position:relative;
+  z-index:1;
+}
+
+
+@keyframes bounceAnimation {
+  0%   { transform:translateY(0)}
+  25%  { transform:translateY(-15%)}
+  50%  { transform:translateY(0)}
+  75%  { transform:translateY(-5%)}
+  100% { transform:translateY(0)}
+}
+
+.animate-bounce {
+  animation: bounceAnimation 5s infinite;
+}
+
+.video-fly,.video-song{
+  display:none;
+  position:absolute;
+  width:40%;
+  margin:auto;
+  left:0;
+  right:0;
+  top:20%;
+  z-index:1;
+  opacity:1;
+}
+
+.babypng{
+  width:25%;
+  position:absolute;
+  right:0;
+  display:none;
+}
+
+@keyframes babyAnimation {
+  0%   { transform:translateX(100%) translateY(-20%)}
+  20%  { transform:translateX(0%) translateY(10%)}
+  40%  { transform:translateX(-100%) translateY(-20%)}
+  60%  { transform:translateX(-200%) translateY(10%)}
+  80%  { transform:translateX(-300%) translateY(-20%)}
+  100% { transform:translateX(-400%) translateY(10%)}
+}
+
+.animate-baby {
+  animation: babyAnimation 30s infinite linear;
+}
+
+.speaker-small{
+  width:5%;
+  position:absolute;
+  top:27%;
+  left:65%;
+  display:none;
+}
+
+@keyframes rotateAnimation {
+  0%   { transform:rotate(0deg)}
+  100% { transform:rotate(360deg)}
+}
+
+.animate-rotate {
+  animation: rotateAnimation 3s infinite;
+}
+
+.lastmenu{
+	width:85%;
+  height:20%;
+  position:absolute;
+  right:0;
+  bottom:0;
+}
+
+.lastmenu img{
+  width:11%;
+  margin:2% 0 0 8%;
+}
+
+.bigcontainer{
+  position:absolute;
+  width:85%;
+  bottom:20%;
+  right:0;
+}
+
+.bigcontainer img{
+  margin:0 0 0 6%;
+  display:none;
+}
+
+.bigcontainer .bus{
+  width:35%;
+}
+
+.bigcontainer .trex{
+  width:25%;
+}
+
+.bigcontainer .elephant{
+  width:10%;
+}
+
+.bigcontainer .woman{
+  width:6%;
+}
+
+
+/*
+.image{
+	position:relative;
+	width:80%;
+	left:12%;
+}
+
+.expand{
+	display:none;
+}
+
+.info{
+	width:40%;
+	background-color:#FFFFFF;
+	color:navy;
+}
+
+
+*/
