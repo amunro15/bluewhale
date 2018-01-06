@@ -5,6 +5,7 @@ $(document).ready(function(){
     $(".bigcontainer img").hide();
     $(".video-fly").hide();
     $(".video-song").hide();
+    $(".size").removeClass("live").hide();
 
     if($(".information .breach").hasClass("live")){
       $(".information .breach").removeClass("live").hide();
@@ -32,6 +33,7 @@ if($(".information .diet").hasClass("live")){
   $(".leftmenu .breach").on("click",function(){
     $(".bigcontainer img").hide();
     $(".video-song").hide();
+    $(".size").removeClass("live").hide();
 
     if($(".information .diet").hasClass("live")){
       $(".information .diet").removeClass("live").hide();
@@ -65,6 +67,7 @@ if($(".information .diet").hasClass("live")){
     $(".bigcontainer img").hide();
     $(".video-fly").hide();
     $(".video-song").hide();
+    $(".size").removeClass("live").hide();
 
     if($(".information .diet").hasClass("live")){
       $(".information .diet").removeClass("live").hide();
@@ -92,6 +95,7 @@ if($(".information .diet").hasClass("live")){
   $(".leftmenu .speaker").on("click",function(){
     $(".bigcontainer img").hide();
     $(".video-fly").hide();
+    $(".size").removeClass("live").hide();
 
     if($(".information .diet").hasClass("live")){
       $(".information .diet").removeClass("live").hide();
@@ -134,6 +138,7 @@ $(".lastmenu img").on("click",function(){
     $(".babypng").removeClass("live").hide();
     $(".speaker-small").removeClass("live").hide();
   }
+  $(".size").addClass("live").show();
   var extractClass = $(this).attr('class');//get the attribute called class
   var toShow = $(".bigcontainer").find("."+extractClass);
   $(".bigcontainer img").hide();

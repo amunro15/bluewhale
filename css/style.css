@@ -28,7 +28,7 @@ body{
   background-image:url("../images/bluewhale.png");
   background-size:60%;
   background-repeat:no-repeat;
-  background-position:50% -20%;
+  background-position:center;
   font-size:14px;
 }
 
@@ -165,10 +165,10 @@ h3{
 }
 
 .speaker-small{
-  width:5%;
+  width:20%;
   position:absolute;
-  top:27%;
-  left:65%;
+  top:5px;
+  right:0;
   display:none;
 }
 
@@ -191,7 +191,7 @@ h3{
 
 .lastmenu img{
   width:11%;
-  margin:2% 0 0 8%;
+  margin:0 0 0 8%;
 }
 
 .bigcontainer{
